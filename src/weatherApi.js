@@ -4,7 +4,7 @@ export const weatherApi=()=>{
 
     const getWeather=async(city)=>{
     try {
-        const response=   await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${import.meta.env.VITE_APIKEY}`,{
+        const response= await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${import.meta.env.VITE_APIKEY}`,{
           
         })
         const response1= await axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&exclude=current,minutely,hourly,alerts&&appid=${import.meta.env.VITE_APIKEY}`)    
@@ -34,7 +34,7 @@ export const weatherApi=()=>{
 const getWeatherbylocation=async()=>{
 
     const position = await new Promise((resolve, reject) => {
-        navigator.geolocation.getCurrentPosition(resolve, reject);
+        navigator.geolocation.getCurrentPosition(resolve,reject);
       });
           const { latitude,longitude}=position.coords
           const response = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&units=metric&appid=${import.meta.env.VITE_APIKEY}`);

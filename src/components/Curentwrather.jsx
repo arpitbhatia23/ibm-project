@@ -13,7 +13,7 @@ const Curentwrather = () => {
     
     return (
         <div className='flex flex-col items-center py-8'>
-            <div className={`flex flex-col px-4 h-auto w-full min-w-[27rem] rounded-xl ${theme === "light" ? "bg-black text-white" : "bg-white text-black"} shadow-md py-2 font-bold`}>
+            <div className={`flex flex-col px-4 h-auto w-full min-w-[27rem] rounded-xl ${theme === "light" ? "bg-black text-white border-2 border-white shadow-md shadow-white" : "bg-white text-black"} shadow-md py-2 font-bold`}>
                 <div>Curentwrather</div>
                 <div className='flex items-center'>
            <CiLocationOn size={25} className='font-bold' /> {data.data?.curentdata?.name}

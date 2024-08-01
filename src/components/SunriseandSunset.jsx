@@ -12,7 +12,7 @@ const SunriseandSunset = () => {
   const sunsettime = sunrise ? new Date(sunset).toLocaleTimeString() : "N/A"
     return (
     <div className='flex justify-center items-center w-full'>
-    <div className={`flex  justify-between px-4 h-auto w-full max-w-2xl rounded-xl ${theme === "light" ? "bg-black text-white" : "bg-white text-black"} shadow-md py-2 font-bold`}>
+    <div className={`flex  justify-between px-4 h-auto w-full max-w-2xl rounded-xl ${theme === "light" ? "bg-black text-white  border-2 border-white shadow-md shadow-white" : "bg-white text-black"} shadow-md py-2 font-bold`}>
      
     <div className='flex-col justify-center items-center'><WiSunrise size={35}/> {sunrisetime}</div> 
     <div className='flex-col justify-center items-center'><BsFillSunsetFill size={35}/> {sunsettime}</div> 

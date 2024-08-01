@@ -9,7 +9,7 @@ const Detailforcast = () => {
 const[click,setclick]=useState(true)
   return (
     <div className={`flex justify-center items-center py-8 px-8  `}>
-    <div className={`flex-col  justify-center items-start py-8 h-[40rem] w-full min-w-[30rem] rounded-xl ${theme==="light"?"bg-black text-white":"bg-white text-black"}`}>
+    <div className={`flex-col  justify-center items-start py-8 h-[40rem] w-full min-w-[30rem] rounded-xl ${theme==="light"?"bg-black text-white shadow-md shadow-white border-2 border-white":"bg-white text-black"}`}>
          {/* <Hourlyforcast/> */}
          {/* <FiveDayforecast/> */}
         <ul className=' flex justify-center items-start gap-4 font-bold  py-10 text-xl'>

@@ -23,6 +23,7 @@ useEffect(()=>{
 
 },[])
 const data=useSelector(state=>state.data)
+const theme = useSelector(state => state.theme.theme)
 if(!result){
   return(
         <div className="flex items-center justify-center w-full bg-white min-h-screen">
@@ -38,7 +39,7 @@ if(!result){
 }
 
   return (
-    <div className='grid  justify-items-center'>
+    <div className={`grid  justify-items-center ${theme === "light" ? "bg-black " : "bg-sky-500"} `} >
       <Toaster/>
     <Nav/>
     <Outlet/>

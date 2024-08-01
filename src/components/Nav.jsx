@@ -73,7 +73,7 @@ const Nav = () => {
       <div className="flex justify-center items-center w-full">
         <div
           className={`flex items-center justify-center px-6 gap-x-8 md:gap-x-20 ${
-            theme === 'light' ? 'bg-black text-white' : 'bg-white text-black'
+            theme === 'light' ? 'bg-black text-white border-2 border-white shadow-md shadow-white' : 'bg-white text-black'
           } md:rounded-2xl h-auto w-[80%] min-w-[32rem] shadow-lg shadow-black py-4 mt-4`}
         >
           <button onClick={() => Setnav(!nav)}>

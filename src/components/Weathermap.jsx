@@ -1,7 +1,7 @@
 import React, { useState,useEffect, useRef } from 'react'
 import 'leaflet/dist/leaflet.css';
 import {MapContainer,TileLayer,LayersControl,Marker, Tooltip} from 'react-leaflet'
-import marker from "../../public/maker.webp"
+import marker from "../assets/maker.webp"
 import { Icon } from 'leaflet';
 import { useSelector } from 'react-redux';
 export default function Weathermap(){
@@ -21,7 +21,7 @@ if (!position) {
   
     return (
       <>
-        <div className={`flex  px-8 py-8 mt-8 h-[35rem] w-[70%] min-w-[27rem] rounded-xl ${theme === "light" ? "bg-black text-white" : "bg-white text-black"} shadow-md py-2 font-bold`}>
+        <div className={`flex  px-8 py-8 mt-8 h-[35rem] w-[70%] min-w-[27rem] rounded-xl ${theme === "light" ? "bg-black text-white border-2 border-white shadow-md shadow-white " : "bg-white text-black "} shadow-md py-2 font-bold`}>
         <div className="flex items-center justify-center w-full ">
       <div role="status">
         <svg aria-hidden="true" className="inline w-8 h-8 text-gray-200 animate-spin dark:text-gray-100 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -37,7 +37,7 @@ if (!position) {
   }
 
     return(
-        <div className={`flex flex-col px-8 py-8 mt-8 mb-8 w-[70%] min-w-[27rem] rounded-xl ${theme === "light" ? "bg-black text-white" : "bg-white text-black"} shadow-md py-2 font-bold`}>
+        <div className={`flex flex-col px-8 py-8 mt-8 mb-8 w-[70%] min-w-[27rem] rounded-xl ${theme === "light" ? "bg-black text-white " : "bg-white text-black"} shadow-md py-2 font-bold`}>
       <MapContainer  ref={mapRef} center={position}  zoom={11} className='w-full rounded-xl h-[35rem] '>
       <LayersControl>
         <TileLayer 
