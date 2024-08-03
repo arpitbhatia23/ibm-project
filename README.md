@@ -1,4 +1,4 @@
-<h1 style="color :blue ; font-size:20px" >this ia lincence by team alpha ibmskill buid frontend web dev </h1>
+<h1 style="font-color :blue ; font-size:20px" >this ia lincence by team alpha ibmskill buid frontend web dev </h1>
 <h1>team member</h1>
 <h2>Aurpit</h2>
 <h2>tamanna</h2>
